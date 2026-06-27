@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-  <body style="background-color: #c9ffcf; font-family: Arial, Helvetica, sans-serif;">
+  
+  <body style="background-color: #c9ffcf; font-family: Arial, Helvetica, sans-serif; background-image:url('bewilderbeast.png'); background-size: 237vh ;">
+    <div style="border: thick double rgb(65, 185, 9); width: 512px; border-radius: 12px; padding: 8px; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%)">
     <h1 style="margin: 4px; padding: 4px;">NandanOS</h1>
-    <h4>Hello, My name is Nandan, Im a 14 year old kid from India who loves technology(Mostly hardware but softwares cool too).
-      <br>I know how to solve the Rubiks cube I can do it under 45 seconds(sometimes more if i havent cubed for a long time)
-      <br> I also think Hackclubs really cool cus ur literally getting paid(well not exactly paid ist like funding) to work on stuff you like.
-      <br> I aslo made Holomat for our school science fair its a project made by <a href="https://www.instagram.com/concept_bytes/" target="_blank">Concept_Bytes</a> and i took inspiration from him and made my Holomat, It was very cool. </h4>
-    <p>Hello, World!</p>
-    <img src="./bewilderbeast's home!.png"/ style="max-width:75% ; height: 75%; border-radius: 12px;">
+    <h4 style="margin: 4px; padding: 4px;">An OS made by Nandan </h4>
+    <p  style="margin: 4px; padding: 4px;">Hello, World!</p>
+    <img src="./home of the bewilderbeast.png"/ style="max-width:75% ; height: 75%; border-radius: 12px; margin: 4px; padding: 4px;">
 
     <a href="https://github.com/Nandan6060">My GitHub</a>
 
@@ -22,7 +20,29 @@
 
     <a href="https://open.spotify.com/track/0ct6r3EGTcMLPtrXHDvVjc">My favourite song</a>
 
-    
-  </body>
+    </div>
 
+     <div style="position: absolute; width: 98.8%; display: flex; backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.25); color: rgb(0,0,0); justify-content: space-between; gap:32px;">
+        <p style="margin-left: 16px; font-weight:1000; font-family: Arial, Helvetica, sans-serif;">
+            NandanOS
+        </p> 
+        <p 
+        id="timeElement"
+        style="margin-right: 16px; font-weight: 650; font-family: Arial, Helvetica, sans-serif;">
+            6/21/2023 3:41 PM
+        </p>
+    </div>
+
+
+    <script>
+        function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    setInterval(updateTime, 1000);
+    </script>
+
+  </body>
+  
 </html>
